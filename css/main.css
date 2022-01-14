@@ -207,3 +207,46 @@ footer {
 #list_amis a:hover {
     text-decoration: underline;
 }
+
+
+/* RESPONSIVE */
+
+@media all and (max-width: 1024px) {
+    #body_page {
+        width: auto;
+    }
+    nav {
+        text-align: left;
+    }
+    nav ul {
+        flex-direction: column;
+    }
+    nav li {
+        padding-left: 4px;
+    }
+    nav a {
+        font-size: 1.1em;
+    }
+    nav a:hover {
+        border-bottom: 0;
+    }
+    /* BANNIERE */
+    #image_banniere {
+        display: none;
+    }
+    /* CORPS */
+    section {
+        flex-direction: column;
+    }
+    article,
+    aside {
+        width: auto;
+        margin-bottom: 15px;
+    }
+    #bulle {
+        display: none;
+    }
+    aside p:last-child {
+        text-align: center;
+    }
+}
